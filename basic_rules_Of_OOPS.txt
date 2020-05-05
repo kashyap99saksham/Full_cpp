@@ -1,0 +1,29 @@
+function overloading : many function having same name in same classs.
+function overriding : exact same function in chlid and parent class.
+function overhiding : same name function but different no. of argument in child and parent class. 
+
+when compiler binds the methods .. it checks the type of object and search in matched class... if not found then check in parent class... but function overloading not works in inheritance case. 
+Parent class Pointer can contain the adress of child class(DESCEDENT) object.
+[When we make a parent class pointer, and assign the address of child class object and then we call the function (i.e. same function) then due to early binding compiler check the type of pointer and binds the parent function.
+To avoid this case , we tell to compiler for late binding so that it can check the value of pointer have , then late binding happens]
+
+
+Abstract Class:(DO nothing Function)
+We can not make object of abstract class.
+we can use all members of abstract class using child class.
+BUT it is mandatory to override that (DO NOTHING) function in child class.		
+basically our main aim is that (do nothing) function should not be called by object..
+there is again a problem occurs.. We can we reach do nothing function via pointer like in previous case..
+so we have to make late binding [virtual] function... it is called as PURE virtual function. 
+
+class having any pure virtual function is called abstract class
+ 
+WHY ABSTRACT CLASS:
+1.For generlization ... making a general class but we dont want to make object of that general class
+2.For their child to override a specific function (means... mandatory to create a function)
+
+
+
+---------------------------------------------------------
+Data hiding : When We dont want to give direct access of data members to object of class... eg: we dont want user can direct put -ve value in age.
+Data encapsulation is a mechanism of bundling the data, and the functions that use them.
